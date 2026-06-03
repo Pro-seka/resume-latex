@@ -1,0 +1,142 @@
+%-------------------------
+% Resume in Latex (Optimized - Same Style Format)
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-2pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Md. Sakib Hasan} \\ \vspace{1pt}
+    \small +880-177-735-4458 $|$
+    \href{mailto:sakib.hsn44@gmail.com}{\underline{sakib.hsn44@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/sakibhasan-dev/}{\underline{LinkedIn}} $|$
+    \href{https://github.com/Pro-seka}{\underline{GitHub}} $|$
+    \href{https://pro-seka.github.io/sakib-os/}{\underline{Portfolio}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Daffodil International University}{Dhaka, Bangladesh}
+    {B.Sc. in Software Engineering}{2024 -- 2028}
+
+  \resumeSubheading
+    {Rajbari Government College}{Rajbari, Bangladesh}
+    {Higher Secondary Certificate (Science)}{2021 -- 2023}
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL INITIATIVES-----------
+\section{Technical Initiatives \& Systems Development}
+\resumeSubHeadingListStart
+
+  \resumeItem{
+    \textbf{Web Desktop Environment \& System Architecture} — Built SakibOS, a browser-based OS simulation with custom window management, drag-resize mechanics, reactive state engine, and dynamic UI rendering using CSS variable injection.
+  }
+
+  \resumeItem{
+    \textbf{AI Systems \& Multi-Model Orchestration} — Developed a modular AI workspace integrating Ollama, OpenAI, and Groq with structured context pipelines, session memory, and SQLite-based persistent state management.
+  }
+
+  \resumeItem{
+    \textbf{Computer Vision Systems} — Implemented YOLOv8-based real-time object detection and MediaPipe-based gesture control system for low-latency interaction and tracking pipelines.
+  }
+
+  \resumeItem{
+    \textbf{System Documentation \& Cross-Domain Engineering} — Created technical documentation across FinTech systems, AI workflows, and software architectures focusing on system design, transaction flow mapping, and interoperability models.
+  }
+
+  \resumeItem{
+    \textbf{Web Graphics Engine} — Built deterministic canvas rendering engine with AABB collision detection, optimized frame loop execution, and cross-platform rendering stability.
+  }
+
+\resumeSubHeadingListEnd
+
+%-----------ENGINEERING EXPERIENCE-----------
+\section{Engineering Experience}
+\resumeSubHeadingListStart
+  \resumeItem{
+    Designed modular software systems using API-driven architecture and local databases (SQLite, MongoDB). Managed scalable system workflows with state optimization, performance tuning, and structured Git-based development practices for collaborative engineering.
+  }
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\resumeSubHeadingListStart
+\resumeItem{
+\textbf{Frontend:} React, JavaScript, HTML, CSS
+}
+\resumeItem{
+\textbf{Backend:} Node.js, Python, Express
+}
+\resumeItem{
+\textbf{Databases:} MongoDB, MySQL, SQLite
+}
+\resumeItem{
+\textbf{Tools:} Git, Docker, Linux, VS Code, GitHub Pages
+}
+\resumeItem{
+\textbf{Core:} System Design, Full-Stack Development, AI Integration, Computer Vision, Technical Documentation
+}
+\resumeSubHeadingListEnd
+
+\end{document}
