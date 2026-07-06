@@ -1,5 +1,6 @@
 %-------------------------
-% Resume in Latex (Optimized - Same Style Format)
+% Resume in Latex
+% Author: Md. Sakib Hasan
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -9,7 +10,6 @@
 \usepackage{titlesec}
 \usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
@@ -26,7 +26,7 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-0.5in}
+\addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
@@ -41,102 +41,132 @@
 \pdfgentounicode=1
 
 %-------------------------
-% Custom commands
+% Custom Commands
+
 \newcommand{\resumeItem}[1]{
-  \item\small{#1 \vspace{-2pt}}
+  \item\small{#1\vspace{-2pt}}
 }
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small #3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small #2 \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in,label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
 \begin{document}
 
-%----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape Md. Sakib Hasan} \\ \vspace{1pt}
-    \small +880-177-735-4458 $|$
-    \href{mailto:sakib.hsn44@gmail.com}{\underline{sakib.hsn44@gmail.com}} $|$
-    \href{https://www.linkedin.com/in/sakibhasan-dev/}{\underline{LinkedIn}} $|$
-    \href{https://github.com/Pro-seka}{\underline{GitHub}} $|$
-    \href{https://pro-seka.github.io/sakib-os/}{\underline{Portfolio}}
+{\Huge\bfseries Md. Sakib Hasan}\\[4pt]
+
+\small
++880-177-735-4458 $|$
+\href{mailto:sakib.hsn44@gmail.com}{sakib.hsn44@gmail.com}
+$|$
+\href{https://www.linkedin.com/in/sakibhasan-dev/}{LinkedIn}
+$|$
+\href{https://github.com/Pro-seka}{GitHub}
+$|$
+\href{https://pro-seka.github.io/sakib-os}{Portfolio}
 \end{center}
 
 %-----------EDUCATION-----------
 \section{Education}
 \resumeSubHeadingListStart
-  \resumeSubheading
-    {Daffodil International University}{Dhaka, Bangladesh}
-    {B.Sc. in Software Engineering}{2024 -- 2028}
 
-  \resumeSubheading
-    {Rajbari Government College}{Rajbari, Bangladesh}
-    {Higher Secondary Certificate (Science)}{2021 -- 2023}
-\resumeSubHeadingListEnd
+\resumeSubheading
+{Daffodil International University}{Dhaka, Bangladesh}
+{B.Sc. in Software Engineering}{Jun. 2024 -- Jun. 2028}
 
-%-----------TECHNICAL INITIATIVES-----------
-\section{Technical Initiatives \& Systems Development}
-\resumeSubHeadingListStart
+\resumeSubheading
+{Rajbari Government College}{Rajbari, Bangladesh}
+{Higher Secondary Certificate (Science)}{Jan. 2021 -- Jan. 2023}
 
-  \resumeItem{
-    \textbf{Web Desktop Environment \& System Architecture} — Built SakibOS, a browser-based OS simulation with custom window management, drag-resize mechanics, reactive state engine, and dynamic UI rendering using CSS variable injection.
-  }
-
-  \resumeItem{
-    \textbf{AI Systems \& Multi-Model Orchestration} — Developed a modular AI workspace integrating Ollama, OpenAI, and Groq with structured context pipelines, session memory, and SQLite-based persistent state management.
-  }
-
-  \resumeItem{
-    \textbf{Computer Vision Systems} — Implemented YOLOv8-based real-time object detection and MediaPipe-based gesture control system for low-latency interaction and tracking pipelines.
-  }
-
-  \resumeItem{
-    \textbf{System Documentation \& Cross-Domain Engineering} — Created technical documentation across FinTech systems, AI workflows, and software architectures focusing on system design, transaction flow mapping, and interoperability models.
-  }
-
-  \resumeItem{
-    \textbf{Web Graphics Engine} — Built deterministic canvas rendering engine with AABB collision detection, optimized frame loop execution, and cross-platform rendering stability.
-  }
-
-\resumeSubHeadingListEnd
-
-%-----------ENGINEERING EXPERIENCE-----------
-\section{Engineering Experience}
-\resumeSubHeadingListStart
-  \resumeItem{
-    Designed modular software systems using API-driven architecture and local databases (SQLite, MongoDB). Managed scalable system workflows with state optimization, performance tuning, and structured Git-based development practices for collaborative engineering.
-  }
 \resumeSubHeadingListEnd
 
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
 \resumeSubHeadingListStart
-\resumeItem{
-\textbf{Frontend:} React, JavaScript, HTML, CSS
-}
-\resumeItem{
-\textbf{Backend:} Node.js, Python, Express
-}
-\resumeItem{
-\textbf{Databases:} MongoDB, MySQL, SQLite
-}
-\resumeItem{
-\textbf{Tools:} Git, Docker, Linux, VS Code, GitHub Pages
-}
-\resumeItem{
-\textbf{Core:} System Design, Full-Stack Development, AI Integration, Computer Vision, Technical Documentation
-}
+
+\resumeItem{\textbf{Languages:} C, Python, Java, JavaScript, SQL, Bash}
+\resumeItem{\textbf{Frameworks \& Libraries:} React, Node.js, Express, Flask, Streamlit, Pandas, NumPy, Scikit-learn, OpenCV, YOLO, MediaPipe}
+\resumeItem{\textbf{Databases:} SQLite, MongoDB, MariaDB}
+\resumeItem{\textbf{Tools \& Technologies:} Git, GitHub, Docker, Linux, Oracle Cloud, Vercel, Supabase}
+\resumeItem{\textbf{Core Competencies:} Full-Stack Development, AI Integration, Machine Learning, Computer Vision, System Design}
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{ClusterPilot} $|$ Python, Kubernetes, Docker, Prometheus, Redis}{Jan. 2026 -- Present}
+\resumeItemListStart
+\resumeItem{Built an autonomous GPU resource-optimization platform for Kubernetes-based AI clusters.}
+\resumeItem{Implemented idle-GPU forecasting, safe resource reclamation, and priority-based workload scheduling.}
+\resumeItem{Developed real-time dashboards for GPU utilization, cost analytics, and cluster management.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{TrashHawk} $|$ Python, Flask, YOLO, OpenCV}{Oct. 2025 -- Present}
+\resumeItemListStart
+\resumeItem{Developed an AI-powered waste-monitoring system that detects littering violations from surveillance footage using YOLO and OpenCV.}
+\resumeItem{Built an offline video-analysis and automated evidence-reporting pipeline for flagging violations.}
+\resumeItem{Secured university funding to advance the project from prototype to deployment.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{ColabCore} $|$ React, Node.js, Python, MongoDB, Scikit-learn}{2026 -- Present}
+\resumeItemListStart
+\resumeItem{Developed an AI-powered platform connecting students, universities, and recruiters through intelligent opportunity matching.}
+\resumeItem{Built ML recommendation and NLP pipelines for resume parsing, semantic skill extraction, and personalized recommendations.}
+\resumeItem{Developed role-based dashboards for placement tracking, analytics, and industry skill-demand forecasting.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{SakibAI} $|$ Python, Streamlit, SQLite, Ollama, OpenAI API}{2026 -- Present}
+\resumeItemListStart
+\resumeItem{Developed a modular AI workspace integrating Ollama, OpenAI, Groq, and Together AI through a unified interface.}
+\resumeItem{Built document intelligence, an AI study assistant, and a personal knowledge base with local document search.}
+\resumeItem{Engineered a privacy-first architecture with SQLite persistence, Docker deployment, and multi-format export support.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------LEADERSHIP & ACHIEVEMENTS-----------
+\section{Leadership \& Achievements}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{Co-Founder, Thirst For Science}}{Apr. 2019 -- Jul. 2024}
+\resumeItemListStart
+\resumeItem{Co-founded a STEM outreach community, organizing workshops and competitions that engaged young learners through hands-on physics experiments.}
+\resumeItem{Secured funding from sponsors to support club events.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Debating \& Science Olympiads}}{}
+\resumeItemListStart
+\resumeItem{Won multiple district-level championships in Classical and Parliamentary debate.}
+\resumeItem{Multiple-time national award recipient in Mathematics and Physics Olympiads.}
+\resumeItemListEnd
+
 \resumeSubHeadingListEnd
 
 \end{document}
